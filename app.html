@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Entry to TCO Grand Finale Collab || Program Panthers
+Created by
+https://www.khanacademy.org/profile/kaid_336884561727810616466311/ | Mindque Blast
+https://www.khanacademy.org/profile/kaid_1131215577137048945271056/ | The Reviewer
+https://www.khanacademy.org/profile/kaid_4713944614410753014535027/ | Stellar
+-->
+
+<head>
+	<script type>
+		window.scroll(0, 0);
+
+		function scrollToHome() {
+			var homeSection = document.getElementById('home');
+			homeSection.scrollIntoView();
+		}
+	</script>
+	<!-- Scroll to Top Script -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Gives instructions to the browser on how to control the page's dimensions and scaling -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Google+Sans&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+	<!-- Imports Fonts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Imports Font Awesome Icons -->
+	<title>WebCraft Academy || ft. Stellar & The Reviewer</title>
+
+	<style>
+		:root {
+			--text-font: 'Google Sans', Arial, sans-serif;
+			--heading-font: 'Raleway', sans-serif;
+			--gunmetal: #202a25ff;
+			--bright-pink-crayola: #ff5666ff;
+			--dark-bright-pink-crayola: #d44252ff;
+			/* Darker version of bright pink */
+			--process-cyan: #01baefff;
+			--dark-process-cyan: #0098c7ff;
+			/* Darker version of process cyan */
+			--ghost-white: #fbfbffff;
+			--dark-ghost-white: #e5e5e5ff;
+			/* Darker version of ghost white */
+			--orange-web: #faa916ff;
+			--dark-orange-web: #d49114ff;
+			/* Darker version of orange web */
+		}
+
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: var(--text-font);
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			overflow-x: hidden;
+			background-color: var(--ghost-white);
+			color: var(--gunmetal);
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		main {
+			flex: 1 0 auto;
+		}
+
+		footer {
+			flex-shrink: 0;
+		}
+
+
+		.btn {
+			background-color: var(--orange-web);
+			line-height: 3.125rem;
+			height: 3.3rem;
+			text-align: center;
+			width: 16.7rem;
+			cursor: pointer;
+			font-size: 1.6rem;
+			color: #FFF;
+			transition: all 0.5s;
+			position: relative;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-color: rgba(255, 255, 255, 0.1);
+			transition: all 0.3s;
+		}
+
+		.btn:hover::before {
+			opacity: 0;
+			transform: scale(0.5, 0.5);
+		}
+
+		.btn::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0;
+			transition: all 0.3s;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			transform: scale(1.2, 1.2);
+		}
+
+		.btn:hover::after {
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+
+		section {
+			padding: 20px;
+			text-align: center;
+		}
+
+		::-webkit-scrollbar {
+			width: 12px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: var(--process-cyan);
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: var(--ghost-white);
+		}
+	</style><!-- General Styles -->
+	<style>
+		.heading-text {
+			font-family: var(--heading-font);
+		}
+
+		@keyframes liquid {
+			0% {
+				border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+			}
+
+			50% {
+				border-radius: 34% 50% 60% 45% / 50% 60% 30% 60%;
+			}
+
+			100% {
+				border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+			}
+		}
+
+
+		header {
+			background: rgb(250, 169, 22);
+			background: linear-gradient(0deg, rgba(250, 169, 22, 1) 0%, rgba(255, 86, 102, 1) 50%, rgba(212, 66, 82, 1) 100%);
+			color: var(--ghost-white);
+			padding: 12% 20%;
+			text-align: center;
+			height: 80%;
+			animation: liquid 8s ease-in-out infinite;
+			margin: 0 4%;
+		}
+
+
+		header h1 {
+			font-size: 3rem;
+		}
+
+		header p {
+			font-size: 1.5rem;
+		}
+	</style> <!-- Hero/Landing Page Styles -->
+	<style>
+		.nav-button {
+			position: fixed;
+			top: 1em;
+			right: 1.25em;
+			z-index: 1000;
+		}
+
+		.nav-button {
+			display: block;
+			width: 3.5em;
+			height: 3.5em;
+			border-radius: 50%;
+			background-color: var(--process-cyan);
+			box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+			color: var(--ghost-white);
+			text-align: center;
+			line-height: 3.7;
+			cursor: pointer;
+			outline: 0;
+			transition: all.5s;
+		}
+
+		.nav-button:hover {
+			transform: scale(1.15);
+			background-color: var(--dark-process-cyan);
+
+		}
+
+		.nav-links {
+			color: var(--ghost-white);
+			position: fixed;
+			height: 100vh;
+			background-color: var(--process-cyan);
+			border-radius: 5px;
+			box-shadow: 0 0 30px #303030AA;
+			padding: 10px;
+			transform: translateX(-100%);
+			top: 0;
+			left: 0;
+			transition: transform 0.3s ease-in-out;
+			line-height: 3.7;
+			z-index: 999;
+		}
+
+		.nav-item {
+			text-align: center;
+			background-color: var(--dark-process-cyan);
+			border-radius: 50%;
+			width: 3.5rem;
+			height: 3.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.5rem;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.nav-item:hover {
+			background-color: #007a9f;
+			cursor: pointer;
+		}
+
+		.nav-links.active {
+			transform: translateX(0);
+		}
+	</style> <!-- Hamburger Navigation Styles -->
+	<style>
+		#premium {
+			background-color: var(--ghost-white);
+			color: var(--gunmetal);
+			padding: 100px 0;
+			text-align: center;
+		}
+
+		.premium-content {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		#premium h2 {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+		}
+
+		#premium p {
+			font-size: 1.2rem;
+			margin-bottom: 30px;
+		}
+
+		.subscription-plans {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.plan {
+			border: 1px solid #333;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 20px;
+			width: 300px;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		.plan:hover {
+			transform: translateY(-5px);
+			box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+		}
+
+		.plan h3 {
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+			color: #fff;
+		}
+
+		.plan p {
+			font-size: 1.1rem;
+			margin: 5px 0;
+		}
+
+		.best-value {
+			background: linear-gradient(45deg, #FF9800, #FFC107);
+			color: #fff;
+			border: 1px solid #FF5722;
+			position: relative;
+		}
+
+		.best-value h3 {
+			color: #fff;
+		}
+
+		.best-value-badge {
+			background-color: var(--dark-orange-web);
+			color: #fff;
+			font-size: 1rem;
+			padding: 5px 10px;
+			border-radius: 20px;
+			position: absolute;
+			/* Positioning within the .best-value element */
+			top: 10px;
+			right: 10px;
+			z-index: 2;
+		}
+
+		.subscribe-btn {
+			margin-top: 20px;
+			line-height: 2.8rem;
+			height: 3rem;
+			text-align: center;
+			cursor: pointer;
+			font-size: 1.4rem;
+			color: #FFF;
+			transition: all 0.5s;
+			border-radius: 5px;
+		}
+
+		.subscribe-btn:hover {
+			background-color: var(--dark-process-cyan);
+		}
+
+		/* Basic Plan */
+		.basic-plan {
+			background: linear-gradient(45deg, #d9d9d9, #eeeeee);
+			border: 1px solid #bbb;
+		}
+
+		.basic-plan h3 {
+			color: #666;
+		}
+
+		/* Pro Plan (Best Value) */
+		.pro-plan {
+			background: linear-gradient(45deg, #FF9800, #FFC107);
+			border: 1px solid #FF5722;
+		}
+
+		.pro-plan h3 {
+			color: #fff;
+		}
+
+		/* Ultimate Plan */
+		.ultimate-plan {
+			background: linear-gradient(45deg, #e5f0f9, #c3e2f3);
+			border: 1px solid #9ac1d3;
+		}
+
+		.ultimate-plan h3 {
+			color: #3083b7;
+		}
+
+		@media (max-width: 768px) {
+			#premium {
+				padding: 50px 0;
+			}
+
+			.subscription-plans {
+				flex-direction: column;
+			}
+
+			.plan {
+				width: 80%;
+				margin: 20px 0;
+			}
+		}
+	</style> <!-- Premium Styles -->
+	<style>
+		.learn-header {
+			text-align: center;
+			padding: 40px 0;
+		}
+
+		.learn-header h2 {
+			font-size: 5rem;
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.learn-header h2: hover {
+			background: -webkit-linear-gradient(#eee, #333);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.learn-header p {
+			font-size: 1.2rem;
+			color: #555;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		/* Lesson Styles */
+		.lesson {
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			margin-top: 20px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		.lesson-title {
+			font-size: 2rem;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		.lesson-description {
+			font-size: 1.2rem;
+			color: #666;
+			margin-bottom: 20px;
+		}
+
+		.lesson-content {
+			font-size: 1rem;
+			color: #444;
+			margin-bottom: 15px;
+		}
+
+		.lesson-subtitle {
+			font-size: 1.5rem;
+			color: #555;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.lesson-list {
+			font-size: 1rem;
+			color: #555;
+			padding-left: 20px;
+		}
+
+		.code-example {
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 15px;
+		}
+
+		.code-example code {
+			color: #333;
+		}
+
+		/* Premium Encouragement Styles */
+		.premium-encouragement {
+			background-color: #f9f9f9;
+			border: 1px solid #ff9800;
+			border-radius: 5px;
+			padding: 20px;
+			margin-top: 40px;
+			text-align: center;
+		}
+
+		.premium-encouragement h3 {
+			font-size: 1.8rem;
+			color: #ff9800;
+			margin-bottom: 10px;
+		}
+
+		.premium-encouragement p {
+			font-size: 1.2rem;
+			color: #555;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.premium-subscribe-btn {
+			background-color: #ff9800;
+			color: #fff;
+			line-height: 3rem;
+			height: 3.5rem;
+			width: 200px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 1rem;
+			border-radius: 5px;
+			margin-top: 20px;
+			transition: background-color 0.3s;
+		}
+
+		.premium-subscribe-btn:hover {
+			background-color: #f57c00;
+		}
+	</style> <!-- Learn Styles -->
+	<style>
+		/* Testimonials Header Styles */
+		.testimonials-header {
+			text-align: center;
+			padding: 40px 0;
+		}
+
+		.testimonials-header h2 {
+			font-size: 5rem;
+			color: var(--gunmetal);
+			margin-bottom: 20px;
+		}
+
+		.testimonials-header p {
+			font-size: 1.2rem;
+			color: var(--gunmetal);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		.testimonial {
+			background-color: var(--ghost-white);
+			border: 1px solid var(--dark-process-cyan);
+			border-radius: 5px;
+			padding: 20px;
+			margin: 20px auto;
+			/* Center testimonials */
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			width: 100%;
+			/* Full width by default */
+			max-width: 400px;
+			/* Maximum width for responsiveness */
+		}
+
+		/* Hover Animation */
+		.testimonial:hover {
+			transform: translateY(0);
+			box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+		}
+
+		.testimonial img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+
+		.testimonial h3 {
+			font-size: 1.8rem;
+			color: var(--gunmetal);
+			margin-bottom: 10px;
+		}
+
+		.testimonial p {
+			font-size: 1.2rem;
+			color: var(--gunmetal);
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	</style> <!-- Testimonial Styles -->
+	<style>
+		/* Home Section Styles */
+		.home-section {
+			color: var(--licorice);
+			padding: 100px 0;
+			text-align: center;
+		}
+
+		.home-content {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		.section-title {
+			font-size: 3.5rem;
+			margin-bottom: 20px;
+		}
+
+		.section-description {
+			font-size: 1.5rem;
+			margin-bottom: 30px;
+		}
+
+		.start-learning-btn {
+			background-color: var(--orange-web);
+			color: #fff;
+			padding: 15px 25px;
+			font-size: 1.5rem;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+
+		.start-learning-btn:hover {
+			background-color: var(--dark-orange-web);
+		}
+	</style> <!-- Home Styles -->
+	<style>
+		#about {
+			padding: 100px 0;
+			background-color: #f9f9f9;
+		}
+
+		#about h1 {
+			font-size: 5rem;
+			text-align: center;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		#about p {
+			font-size: 1.2rem;
+			text-align: center;
+			margin-bottom: 40px;
+			color: #666;
+		}
+
+		#intro {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 60px;
+		}
+
+		.img-container {
+			width: 45%;
+			height: 400px;
+			border-radius: 10px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#intro div {
+			width: 45%;
+			text-align: left;
+			margin: -10px auto;
+		}
+
+		#intro h2 {
+			font-size: 2.5rem;
+			margin-bottom: 15px;
+			color: #333;
+		}
+
+		#intro p {
+			font-size: 1.1rem;
+			color: #666;
+		}
+
+		#founded {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* Center horizontally */
+			text-align: center;
+			/* Center text */
+		}
+
+		#founded h2 {
+			font-size: 2.5rem;
+			margin-bottom: 15px;
+			color: #333;
+		}
+
+		#founded p {
+			font-size: 1.1rem;
+			color: #666;
+			max-width: 80%;
+			/* Limit width of text */
+		}
+	</style> <!-- About Styles -->
+	<style>
+		@keyframes slideIn-Up {
+			0% {
+				transform: translateY(100px);
+			}
+
+			100% {
+				transform: translateY(0px);
+			}
+		}
+
+		@keyframes slideIn-Left {
+			0% {
+				transform: translateX(-100px);
+			}
+
+			100% {
+				transform: translateX(0px);
+			}
+		}
+
+		@keyframes slideIn-Right {
+			0% {
+				transform: translateX(100px);
+			}
+
+			100% {
+				transform: translateX(0px);
+			}
+		}
+
+		.scroll-element {
+			opacity: 0;
+			transition: 500ms all;
+		}
+
+		/*These will be applied when element is in view*/
+		.scrolled {
+			opacity: 1;
+		}
+
+		.scrolled.left {
+			animation: slideIn-Left 500ms ease-in-out;
+		}
+
+		.scrolled.right {
+			animation: slideIn-Right 500ms ease-in-out;
+		}
+
+		.scrolled.up {
+			animation: slideIn-Up 500ms ease-in-out;
+		}
+	</style> <!-- Scroll Animation CSS -->
+	<style>
+		footer {
+			background-color: var(--gunmetal);
+			color: var(--ghost-white);
+			text-align: center;
+			padding: 10px;
+		}
+	</style> <!-- Footer Styles -->
+
+</head>
+
+<body>
+	<header id="main-header">
+		<h1>Welcome to WebCraft Academy</h1>
+		<p>Learn how to create <strong>stunning</strong> websites with our interactive tutorials.</p>
+		<div class="btn" onclick="scrollToHome()">
+			<span>Explore</span>
+		</div>
+	</header> <!-- Hero/Landing Page -->
+
+	<nav class="round-nav">
+		<a class="nav-button" onclick="toggleNav()">
+			<i class="fa-solid fa-bars"></i>
+		</a> <!-- Hamburger Nav Button -->
+
+		<div class="nav-links">
+			<a class="nav-item" onclick="showPage('home')"><i class="fa-solid fa-house"></i></a>
+			<a class="nav-item" onclick="showPage('about')"><i class="fa-solid fa-circle-info"></i></a>
+			<a class="nav-item" onclick="showPage('learn')"><i class="fa-solid fa-graduation-cap"></i></a>
+			<a class="nav-item" onclick="showPage('premium')"><i class="fa-solid fa-crown"></i></a>
+			<a class="nav-item" onclick="showPage('testimonials')"><i class="fa-solid fa-star"></i></a>
+			<a class="nav-item" onclick="showPage('feedback')"><i class="fa-solid fa-comment"></i></a>
+		</div> <!-- Nav Items -->
+
+	</nav> <!-- Hamburger Navbar -->
+
+	<main>
+		<section id="home" class="home-section">
+			<div class="home-content">
+				<h2 class="section-title scroll-element left">Welcome to WebCraft Academy</h2>
+				<p class="section-description scroll-element right">Embark on a transformative journey through the dynamic realms of web design and development. At WebCraft Academy, we're dedicated to igniting your passion for creating exceptional digital experiences.</p>
+				<a onclick="showPage('learn')" class="btn start-learning-btn scroll-element up">Start Your Journey</a>
+			</div>
+		</section> <!-- Home Page -->
+
+		<section id="about">
+			<h1 class="gen-page-heading">About Us</h1>
+			<p>Empowering Creativity Through HTML and CSS</p>
+			<p>Welcome to WebCraft Academy, where we fuel the flames of creativity through the art of web design. Our passionate team of experts is committed to equipping individuals of all ages with the knowledge and skills necessary to craft visually stunning and user-friendly websites.</p>
+
+			<div id="intro">
+				<div class="img-container scroll-element left" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Programming_code.jpg/640px-Programming_code.jpg');"></div>
+				<div class="scroll-element right">
+					<h2>Tutor Team, At Your Service</h2>
+					<p>Meet our dedicated crew of experienced web gurus, ready to accompany you through every step of your coding journey. Whether you're taking your first steps in web development or are already familiar with the landscape, WebCraft Academy is your ultimate destination to master the art of crafting captivating websites.</p>
+				</div>
+			</div> <!-- Intro -->
+
+			<div id="founded" class="scroll-element right">
+				<h2>The Mythical Beginning</h2>
+				<p>Legend has it that our founder is nameless, and the Academy itself emerged from the pure binary essence at the dawn of time. Is it just a captivating myth? One thing is certain—WebCraft Academy's legacy is etched into the fabric of the digital universe.</p>
+			</div> <!-- About the Founder -->
+
+		</section> <!-- About Page -->
+
+		<section id="learn">
+			<div class="learn-header">
+				<h2>Learn with Us</h2>
+				<p>Our comprehensive learning modules cover a wide range of topics, including HTML, CSS, JavaScript, responsive design, and more. Dive into our interactive lessons, practical exercises, and hands-on projects to master the art of web design.</p>
+			</div> <!-- Learn Header -->
+
+			<div class="lesson scroll-element left">
+				<div>
+					<h3 class="lesson-title">Lesson 1: Introduction to HTML</h3>
+					<p class="lesson-description">In this lesson, you will learn the basics of HTML, the markup language used to structure content on the web. We will cover the fundamental HTML tags and their purposes.</p>
+					<p class="lesson-content">HTML (Hypertext Markup Language) is the backbone of any web page. It provides the structure and organization for your content, including text, images, links, and more.</p>
+				</div> <!-- Introduction -->
+
+				<div class="lesson scroll-element right">
+					<h4 class="lesson-subtitle">Understanding the purpose of HTML in web development</h4>
+					<p class="lesson-content">HTML stands for Hypertext Markup Language. It is a standard language used to create and structure web pages. Think of HTML as the blueprint that defines how content should be presented in a web browser. HTML allows you to define headings, paragraphs, lists, images, links, and other elements that make up a webpage.</p>
+					<p class="lesson-content">When you visit a website, your browser reads the HTML code and renders it into the visual content you see on the screen. Without HTML, web pages would be a chaotic collection of text and media without any structure.</p>
+				</div> <!-- Purpose of HTML -->
+
+				<div class="lesson scroll-element right">
+					<h4 class="lesson-subtitle">Exploring essential HTML tags and their functions</h4>
+					<p class="lesson-content">HTML consists of various tags, each serving a specific purpose. Tags are enclosed in angle brackets (&lt; >) and often come in pairs: an opening tag and a closing tag. The content between these tags is affected by the tag's purpose.</p>
+					<ul class="lesson-list">
+						<li><code>&lt;!DOCTYPE html&gt;</code>: This declaration specifies the HTML version being used (HTML5 in this case).</li>
+						<li><code>&lt;html&gt;</code>: The root element of an HTML page. All other elements are contained within it.</li>
+						<li><code>&lt;head&gt;</code>: This section contains meta-information about the page, such as the title displayed in the browser tab.</li>
+						<li><code>&lt;title&gt;</code>: Sets the title of the page that appears in the browser's title bar or tab.</li>
+						<li><code>&lt;body&gt;</code>: This is where the visible content of the page resides, such as text, images, and links.</li>
+					</ul>
+				</div> <!-- Exploring essential HTML tags -->
+
+				<div class="lesson scroll-element right">
+					<h4 class="lesson-subtitle">Creating a basic HTML structure for a web page</h4>
+					<p class="lesson-content">A simple HTML structure consists of these essential elements:</p>
+					<div class="code-example">
+						<code>
+							&lt;!DOCTYPE html&gt;<br>
+							&lt;html&gt;<br>
+							&nbsp;&nbsp;&lt;head&gt;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First Web Page&lt;/title&gt;<br>
+							&nbsp;&nbsp;&lt;/head&gt;<br>
+							&nbsp;&nbsp;&lt;body&gt;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a sample paragraph.&lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;/body&gt;<br>
+							&lt;/html&gt;
+						</code>
+					</div>
+				</div> <!-- Creating a basic HTML Structure -->
+
+				<div class="lesson scroll-element left">
+					<h4 class="lesson-subtitle">Inserting text, images, and links using HTML</h4>
+					<p class="lesson-content">HTML allows you to include various types of content in your web page:</p>
+					<div class="code-example">
+						<code>
+							&lt;p&gt;This is a &lt;a href="https://www.example.com"&gt;link&lt;/a&gt; to Example.com.&lt;/p&gt;<br>
+							&lt;img src="image.jpg" alt="An example image"&gt;
+						</code>
+					</div>
+					<p class="lesson-content">In the example above, the <code>&lt;a&gt;</code> tag creates a hyperlink, and the <code>&lt;img&gt;</code> tag inserts an image. The <code>href</code> attribute specifies the link's destination, and the <code>src</code> attribute defines the image's source.</p>
+				</div> <!-- Inserting text, images, and links -->
+				<div class="lesson scroll-element right">
+					<h4 class="lesson-subtitle">Conclusion</h4>
+					<p class="lesson-content">Congratulations! By completing this lesson, you've gained a solid understanding of HTML and its role in web development. You now know how to create a basic HTML structure and insert text, images, and links. This knowledge is fundamental as you continue your journey in web design and development.</p>
+				</div> <!-- Conclusion -->
+			</div> <!-- Full Lesson -->
+
+
+
+			<div class="premium-encouragement scroll-element right">
+				<h3>Unlock More Lessons with Premium</h3>
+				<p>Ready to take your skills to the next level? Upgrade to our premium subscription and gain access to exclusive lessons, advanced tutorials, and personalized support.</p>
+				<div class="btn premium-subscribe-btn" onclick="showPage('premium')">Subscribe to Premium</div>
+			</div> <!-- Buy Premium Subscription -->
+		</section> <!-- Learn Page -->
+
+		<section id="premium">
+			<div class="premium-content">
+				<h2>Unlock Premium Content</h2>
+				<p>Upgrade to a premium subscription and access exclusive content, advanced tutorials, and personalized support. Choose a plan that suits your needs:</p>
+
+				<div class="subscription-plans">
+
+					<div class="plan basic-plan scroll-element left">
+						<h3><i class="fas fa-medal"></i> Basic Plan</h3>
+						<p><i class="fas fa-check"></i> Access to premium tutorials</p>
+						<p><i class="fas fa-check"></i> Email support</p>
+						<p><strong>Price:</strong> $9.99/month</p>
+						<div class="btn subscribe-btn">Subscribe</div>
+					</div> <!-- Basic Plan -->
+
+					<div class="plan best-value pro-plan scroll-element up">
+						<div class="best-value-badge">Best Value</div>
+						<h3><i class="fas fa-crown"></i> Pro Plan</h3>
+						<p><i class="fas fa-check"></i> Access to premium tutorials</p>
+						<p><i class="fas fa-check"></i> Email and chat support</p>
+						<p><i class="fas fa-check"></i> Exclusive webinars</p>
+						<p><strong>Price:</strong> $19.99/month</p>
+						<div class="btn subscribe-btn">Subscribe</div>
+					</div> <!-- Pro Plan -->
+
+					<div class="plan ultimate-plan scroll-element right">
+						<h3><i class="fas fa-gem"></i> Ultimate Plan</h3>
+						<p><i class="fas fa-check"></i> Access to premium tutorials</p>
+						<p><i class="fas fa-check"></i> Email, chat, and phone support</p>
+						<p><i class="fas fa-check"></i> Exclusive webinars and workshops</p>
+						<p><i class="fas fa-check"></i> Personal mentorship</p>
+						<p><strong>Price:</strong> $49.99/month</p>
+						<div class="btn subscribe-btn">Subscribe</div>
+					</div> <!-- Ultimate Plan -->
+
+				</div> <!-- Subscribtion Plans -->
+
+			</div> <!-- Premium Content -->
+		</section> <!-- Premium Subscription Page -->
+
+		<section id="testimonials">
+			<div class="testimonials-header">
+				<h2>What Our Students Say</h2>
+				<p>Don't just take our word for it. Hear from our satisfied students who have transformed their passion for design into valuable skills. Join the community of WebCraft Academy learners and embark on your own journey to success.</p>
+			</div> <!-- Testimonial Heading -->
+
+			<div class="testimonial scroll-element left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Mosuo_Woman_-_42723465920.jpg/640px-Mosuo_Woman_-_42723465920.jpg" alt="Learner 1">
+				<h3>Emily Smith</h3>
+				<p>"WebCraft Academy provided me with the knowledge and confidence to create stunning websites. The interactive lessons and practical exercises were invaluable."</p>
+			</div> <!-- Testimonial -->
+
+			<div class="testimonial scroll-element right">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/IMG-20230301-WA0001.jpg/640px-IMG-20230301-WA0001.jpg" alt="Learner 2">
+				<h3>John Doe</h3>
+				<p>"I'm amazed at how quickly I learned web design through WebCraft Academy. The support from the community and mentors made the experience truly rewarding."</p>
+			</div> <!-- Testimonial -->
+
+			<div class="testimonial scroll-element left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Woman_at_Lover%27s_Bridge_Tanjung_Sepat_%28cropped%29.jpg/640px-Woman_at_Lover%27s_Bridge_Tanjung_Sepat_%28cropped%29.jpg" alt="Learner 3">
+				<h3>Susan Williams</h3>
+				<p>"As a beginner, I was unsure where to start. WebCraft Academy guided me step by step, and now I can confidently create professional websites."</p>
+			</div> <!-- Testimonial -->
+
+			<div class="testimonial scroll-element right">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Gentleman_chanteur.jpg/640px-Gentleman_chanteur.jpg" alt="Learner 4">
+				<h3>Michael Johnson</h3>
+				<p>"I never thought I could become a web designer, but thanks to WebCraft Academy's clear explanations and hands-on projects, I'm now building websites I'm proud of."</p>
+			</div> <!-- Testimonial -->
+
+			<div class="testimonial scroll-element left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Emily_Henderson.jpg/640px-Emily_Henderson.jpg" alt="Learner 5">
+				<h3>Laura Lee</h3>
+				<p>"WebCraft Academy's lessons are well-structured and easy to follow. The step-by-step approach helped me learn quickly and efficiently."</p>
+			</div> <!-- Testimonial -->
+
+		</section> <!-- Testimonials Page -->
+
+		<section id="feedback" class="scroll-element right">
+			<h2>Provide Feedback</h2>
+			<p>We value your input! Share your thoughts, suggestions, and feedback to help us improve your learning experience. Your insights contribute to making WebCraft Academy a platform tailored to your needs.</p>
+		</section> <!-- Feedback Page -->
+	</main> <!-- Pages -->
+
+	<footer>
+		<p>&copy; 2023 Webcraft Academy. All rights reserved.</p>
+	</footer> <!-- Footer -->
+
+	<script type>
+		function checkScroll() {
+			var scrollElements = document.getElementsByClassName('scroll-element');
+			for (var i = 0; i < scrollElements.length; i++) {
+				if (scrollElements[i].getBoundingClientRect().top < window.innerHeight) {
+					scrollElements[i].classList.add('scrolled');
+				} else {
+					scrollElements[i].classList.remove('scrolled');
+				}
+			}
+			//Checks if scroll-elements are in view 
+		}
+
+		// Check scroll on load
+		checkScroll();
+
+		// Add event listener
+		document.addEventListener('scroll', checkScroll);
+	</script> <!-- Scroll Animation Script -->
+
+	<script type>
+		function toggleNav() {
+			// Get the .nav-links element
+			var navLinks = document.querySelector('.nav-links');
+
+			// Add or remove the .active class to/from .nav-links
+			navLinks.classList.toggle('active');
+		}
+	</script> <!-- Toggle Hamburger Nav Script -->
+
+	<script type>
+		function showPage(pageId) {
+			var header = document.getElementById('main-header');
+
+			if (pageId === 'home') {
+				header.style.display = 'block';
+			} else {
+				header.style.display = 'none';
+			}
+			// Get all section elements
+			var sections = document.getElementsByTagName('section');
+
+			// Hide all sections
+			for (var i = 0; i < sections.length; i++) {
+				sections[i].style.display = 'none';
+			}
+
+			// Show the selected section
+			var selectedSection = document.getElementById(pageId);
+			selectedSection.style.display = 'block';
+
+			// Close the navigation menu (if open)
+			var navLinks = document.querySelector('.nav-links');
+			navLinks.classList.remove('active');
+			window.scroll(0, 0);
+		}
+
+		// Show only the home page initially
+		document.addEventListener('DOMContentLoaded', function() {
+			var homeSection = document.getElementById('home');
+			homeSection.style.display = 'block';
+
+			var sections = document.getElementsByTagName('section');
+			for (var i = 1; i < sections.length; i++) {
+				sections[i].style.display = 'none';
+			}
+		});
+	</script> <!-- Page Switch Script -->
+
+</body>
+
+</html>
